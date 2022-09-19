@@ -16,11 +16,17 @@ Google Drive Link: https://drive.google.com/drive/folders/1zeAeG00g-alVaN_bGQQ0r
 >>python server.py
 7.	Open another anaconda terminal and run camera_1.py with the required arguments
 >> python camera_1.py --weights best.pt --img 416 --conf 0.1 –source video1.mp4
+
 In which,
+
 camera_1.py: the program name
+
 --weight: the trained model (best.pt)
+
 --source: location of the input file
+
 --img: images size
+
 --conf: confidence threshold
 
 The report (report.txt) will be generated in the same folder after the completion of execution.
