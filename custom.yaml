@@ -1,0 +1,9 @@
+path: /content/train-data1  
+train: images/train  
+val: images/val  
+test:  # test images (optional)
+
+# Classes
+names:
+  0: person
+
