@@ -15,7 +15,10 @@ Google Drive Link: https://drive.google.com/drive/folders/1zeAeG00g-alVaN_bGQQ0r
 6.	Then run server.py in an anaconda terminal. Keep the program running
 >>python server.py
 7.	Open another anaconda terminal and run camera_1.py with the required arguments
->> python camera_1.py --weights best.pt --img 416 --conf 0.1 –source video1.mp4
+>> python camera_1.py --weights best.pt --img 416 --conf 0.1 --source video1.mp4
+
+If this step shows any error, use the complete directory path. For example,
+>> python C:\Users\hkv\Desktop\rtfsc-master\camera_1.py --weights C:\Users\hkv\Desktop\rtfsc-master\best.pt --img 416 --conf 0.1 --source C:\Users\hkv\Desktop\rtfsc-master\video1.mp4
 
 In which,
 
