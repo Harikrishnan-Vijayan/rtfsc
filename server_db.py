@@ -41,7 +41,7 @@ while t1:
       tot_pass = cam1 + 0
       print ('Occupied Seats/Number of People : ' + tot_pass)
 
-      sql = "INSERT INTO customers (bustrip_id, bus_id, trip_no, t_date, t_day, t_time, last_stop, passenger_count) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"
+      sql = "INSERT INTO TRIP_001 (bustrip_id, bus_id, trip_no, t_date, t_day, t_time, last_stop, passenger_count) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"
       
       current_time = datetime.datetime.now()
       
@@ -51,8 +51,9 @@ while t1:
       last_stop = xyz
       passenger_count = tot_pass
       
-      val = (bustrip_id, bus_id, trip_no, t_date, t_day, t_time, last_stop, passenger_count)
+      val = (str(bustrip_id), str(bus_id), str(trip_no), str(t_date), str(t_day), str(t_time), str(last_stop), str(passenger_count))
       mycursor.execute(sql, val)
+      bustrip_id = bustrip_id + 1
 
   	else:
       t1 = t2 = 0
