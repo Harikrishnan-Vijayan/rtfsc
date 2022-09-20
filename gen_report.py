@@ -7,11 +7,14 @@ mydb = mysql.connector.connect(
   database="RTFSD"
 )
 
+file1 = open('report.txt', 'w')
+
 mycursor = mydb.cursor()
 
-mycursor.execute("SELECT * FROM customers")
+mycursor.execute("SELECT * FROM TRIP_001")
 
 myresult = mycursor.fetchall()
 
-for x in myresult:
-  print(x)
+file1.write(myresult)
+
+file1.close()
